@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #222;
+}
+.card{
+    border: 1px solid rgb(255, 255, 255);
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    text-align: center;
+    color: #fff;
+    margin: 10px auto 0;  //by this it came in the center
+    border-radius: 20px;
+    padding: 40px 35px;
+
+    & .search{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & input{
+            height: 50px;
+            border-radius: 25px;
+            flex: 1;
+            outline: 0;
+            font-size: 16px;
+            border: 0;
+            padding: 10px 20px;
+            color: #555;
+            margin-right: 12px;
+            background: #ebfffc;
+            box-shadow: 1px 5px 10px black;
+            
+            
+        }
+        
+        & button{
+            border: 0;
+            outline: 0;
+            background: #ebfffc;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            & img{
+                height: 25px;
+               width: 21px;
+               margin-top: 5px;
+               
+              }
+            
+        }
+        & .reset {
+            position: absolute;
+            margin-left: 290px;
+            border: none;
+
+        }
+        & .submit{
+            box-shadow: 1px 5px 10px black;
+        }
+    }
+    
+    
+
+    & .weather {
+        & .weather_icon{
+            width: 170px;
+            margin-top: 30px;
+            
+        }
+        & h1{
+            font-size: 70px;
+            font-weight: 500;
+        }
+        & h2{
+            font-size: 45px;
+            font-weight: 500;
+            margin-top: 3px;
+            display: flex;
+            justify-content: center;
+        }
+        & h5{
+            font-size: 20px;
+            margin-top: 10px;
+            font-family:sans-serif;
+            font-weight: 100;
+        }
+        & h6{
+            font-size: 25px;
+        }
+        & .details{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            align-items: center;
+            margin-top: 50px;
+
+            & .col{
+                text-align: left;
+                display: flex;
+                align-items: center;
+
+                & img{
+                    width: 40px;
+                    margin-right: 10px;
+                }
+                & .humid{
+                    & .humadity{
+                        font-size: 280px;
+                        margin-top: -6px;
+                    }
+                }
+                .windy{
+                    & .wind{
+                        font-size: 28px;
+                        margin-top: -6px;
+                    }
+                }
+               
+                
+            }
+            
+        }
+        & .time{
+            line-height:8vh;
+            font-size:1.5rem;
+        }
+        .tempDetails{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 70px;
+            margin-top: 20px;
+            align-items: center;
+            font-size: 20px;
+            font-weight:100;
+        }
+
+    }   
+    
+}
