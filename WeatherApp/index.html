@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WeatherApp/scss/main.css">
+    
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter the city name" spellcheck="false">
+            <button type="reset" class="reset">X</button>
+            <button class="submit"><img src="/WeatherApp/images/search.png" alt=""></button>
+        </div>
+        <!-- Add this button to your HTML file -->
+        <button class="currentBtn">Current Weather</button>
+
+        <div class="weather" id="weatherUpdate">
+            <img src="images/clouds.png" alt="" class="weather_icon">
+            <h6><span class="day">Tue</span> ,<span class="date"> 1 Jan 2024</span></h6>
+            <span class="time"> 2:30PM</span>
+            <h1 class="temp">22&deg;C</h1>
+            <h2 class="city">New York
+            <h5 class="cond">Clear</h5>
+            <h5>AQI:<span class="air">4</span></h5>
+            <h6 class="airtype">Poor</h6>
+            <!-- Details of the weather start-->
+            <div class="tempDetails">
+                <div class="max">
+                    <p>Max temp:</p>
+                    <p class="maxTemp">20 &deg;C</p> 
+                </div>
+                |
+                <div class="min">
+                    <p>Min temp:</p>
+                    <p class="minTemp">20 &deg;C</p> 
+                </div> 
+            </div>
+            <!-- <div class="extra">
+                <p>Pressure</p>
+            </div> -->
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <!-- Humadity text -->
+                    <div class="humid">
+                        <p class="humidi">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <!-- Humadity text -->
+                    <div class="windy">
+                        <p class="wind">23.5 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Details of the weather end -->
+
+        </div>
+    </div>
+</body>
+<script src="/WeatherApp/index.js" type="module"></script>
+<!-- <script src="/WeatherApp/index1.js" type="module"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+</html>
